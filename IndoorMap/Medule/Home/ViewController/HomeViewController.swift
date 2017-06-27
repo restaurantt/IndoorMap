@@ -10,6 +10,7 @@ import UIKit
 import SnapKit
 import RxSwift
 import RxCocoa
+import CoreLocation
 
 class HomeViewController: BaseViewController, MAMapViewDelegate {
 
@@ -22,6 +23,8 @@ class HomeViewController: BaseViewController, MAMapViewDelegate {
         // Do any additional setup after loading the view.
         initMapView()
         setupView()
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -67,6 +70,29 @@ class HomeViewController: BaseViewController, MAMapViewDelegate {
         }
     }
 
+    func checkLocationAuth() {
+        if(CLLocationManager.authorizationStatus() != .denied) {
+            print("应用拥有定位权限")
+        }else {
+            
+            let alert = UIAlertController(title: "打开定位开关", message:"定位服务未开启,请进入系统设置>隐私>定位服务中打开开关,并允许使用定位服务", preferredStyle: .alert)
+            let tempAction = UIAlertAction(title: "取消", style: .cancel) { (action) in
+            }
+            let callAction = UIAlertAction(title: "立即设置", style: .default) { (action) in
+                let url = NSURL.init(string: UIApplicationOpenSettingsURLString)
+                if UIApplication.shared.canOpenURL((url?.absoluteURL)!) {
+                    
+                }
+                
+            }
+            alert.addAction(tempAction)
+            alert.addAction(callAction)
+            self.present(alert, animated: true, completion: { 
+                
+            })
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

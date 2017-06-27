@@ -14,7 +14,7 @@ import RxCocoa
 class SearchBarView: UIView, UITextFieldDelegate {
 
     typealias GotoSearchBlock = () -> ()
-    typealias SearchBlock = (String!) -> ()
+    typealias SearchBlock = (_ keyword: String) -> Void
 
     
     var textField = UITextField()
@@ -64,7 +64,7 @@ class SearchBarView: UIView, UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if !(textField.text?.isEmpty)! {
-            searchBlock!(textField.text)
+            searchBlock!(textField.text!)
         }
         return true
     }

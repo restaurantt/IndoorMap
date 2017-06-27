@@ -9,11 +9,14 @@
 import UIKit
 
 class SearchViewController: BaseViewController {
-
+    
+    var searchBarView = SearchBarView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        setupView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,7 +25,20 @@ class SearchViewController: BaseViewController {
     }
     
     func setupView() {
+        weak var weakSelf = self
+        searchBarView.shouldGotoSearch = false
+        searchBarView.searchBlock = {
+            keyword in
+            print(keyword)
+        }
         
+        self.view.addSubview(searchBarView)
+        searchBarView.snp.makeConstraints { (make) in
+            make.top.equalTo(self.view.snp.top).offset(25)
+            make.left.equalTo(self.view.snp.left).offset(20)
+            make.right.equalTo(self.view.snp.right).offset(-20)
+            make.height.equalTo(35)
+        }
     }
     
     
