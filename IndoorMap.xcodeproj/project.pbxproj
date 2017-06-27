@@ -15,6 +15,12 @@
 		DBB760B61F01EE08005EB98C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB760B41F01EE08005EB98C /* LaunchScreen.storyboard */; };
 		DBB760C11F01EE08005EB98C /* IndoorMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB760C01F01EE08005EB98C /* IndoorMapTests.swift */; };
 		DBB760CC1F01EE08005EB98C /* IndoorMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB760CB1F01EE08005EB98C /* IndoorMapUITests.swift */; };
+		DBB760DA1F01F590005EB98C /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB760D91F01F590005EB98C /* Const.swift */; };
+		DBB760E11F01F598005EB98C /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB760DC1F01F598005EB98C /* BaseModel.swift */; };
+		DBB760E21F01F598005EB98C /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB760DD1F01F598005EB98C /* BaseNavigationController.swift */; };
+		DBB760E31F01F598005EB98C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB760DE1F01F598005EB98C /* BaseViewController.swift */; };
+		DBB760E41F01F598005EB98C /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB760DF1F01F598005EB98C /* BaseViewModel.swift */; };
+		DBB760E51F01F598005EB98C /* BaseWKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB760E01F01F598005EB98C /* BaseWKWebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,12 @@
 		DBB760C71F01EE08005EB98C /* IndoorMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IndoorMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBB760CB1F01EE08005EB98C /* IndoorMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndoorMapUITests.swift; sourceTree = "<group>"; };
 		DBB760CD1F01EE08005EB98C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBB760D91F01F590005EB98C /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		DBB760DC1F01F598005EB98C /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		DBB760DD1F01F598005EB98C /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		DBB760DE1F01F598005EB98C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		DBB760DF1F01F598005EB98C /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		DBB760E01F01F598005EB98C /* BaseWKWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWKWebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +135,10 @@
 			children = (
 				DBB760AB1F01EE08005EB98C /* AppDelegate.swift */,
 				DBB760AD1F01EE08005EB98C /* ViewController.swift */,
+				DBB760D91F01F590005EB98C /* Const.swift */,
 				DBB760AF1F01EE08005EB98C /* Main.storyboard */,
+				DBB760DB1F01F598005EB98C /* Base */,
+				DBB760E61F01F5A7005EB98C /* Medule */,
 				DBB760B21F01EE08005EB98C /* Assets.xcassets */,
 				DBB760B41F01EE08005EB98C /* LaunchScreen.storyboard */,
 				DBB760B71F01EE08005EB98C /* Info.plist */,
@@ -147,6 +162,25 @@
 				DBB760CD1F01EE08005EB98C /* Info.plist */,
 			);
 			path = IndoorMapUITests;
+			sourceTree = "<group>";
+		};
+		DBB760DB1F01F598005EB98C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DBB760DC1F01F598005EB98C /* BaseModel.swift */,
+				DBB760DD1F01F598005EB98C /* BaseNavigationController.swift */,
+				DBB760DE1F01F598005EB98C /* BaseViewController.swift */,
+				DBB760DF1F01F598005EB98C /* BaseViewModel.swift */,
+				DBB760E01F01F598005EB98C /* BaseWKWebViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		DBB760E61F01F5A7005EB98C /* Medule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Medule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,6 +370,12 @@
 			files = (
 				DBB760AE1F01EE08005EB98C /* ViewController.swift in Sources */,
 				DBB760AC1F01EE08005EB98C /* AppDelegate.swift in Sources */,
+				DBB760E51F01F598005EB98C /* BaseWKWebViewController.swift in Sources */,
+				DBB760E11F01F598005EB98C /* BaseModel.swift in Sources */,
+				DBB760E41F01F598005EB98C /* BaseViewModel.swift in Sources */,
+				DBB760E21F01F598005EB98C /* BaseNavigationController.swift in Sources */,
+				DBB760DA1F01F590005EB98C /* Const.swift in Sources */,
+				DBB760E31F01F598005EB98C /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +622,7 @@
 				DBB760D21F01EE08005EB98C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DBB760D31F01EE08005EB98C /* Build configuration list for PBXNativeTarget "IndoorMapTests" */ = {
 			isa = XCConfigurationList;
@@ -590,6 +631,7 @@
 				DBB760D51F01EE08005EB98C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DBB760D61F01EE08005EB98C /* Build configuration list for PBXNativeTarget "IndoorMapUITests" */ = {
 			isa = XCConfigurationList;
@@ -598,6 +640,7 @@
 				DBB760D81F01EE08005EB98C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

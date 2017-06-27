@@ -16,4 +16,11 @@ pod 'ESPullToRefresh'
 pod 'PKHUD', '~> 4.0'
 pod 'SCLAlertView'
 
+#amap
+#pod 'AMap3DMap'
+pod 'AMapSearch'    #搜索功能
+pod 'AMapLocation'  #定位SDK
+pod 'AMapNavi'      #已包含3D地图，无需单独引入3D地图
+
+
 end
