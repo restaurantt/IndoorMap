@@ -9,7 +9,6 @@ PODS:
     - AMapFoundation (~> 1.4)
   - AMapSearch (5.2.1):
     - AMapFoundation (~> 1.2)
-  - ESPullToRefresh (2.6)
   - Kingfisher (3.10.2)
   - ObjectMapper (2.2.7)
   - PKHUD (4.2.3)
@@ -27,7 +26,6 @@ DEPENDENCIES:
   - AMapLocation
   - AMapNavi
   - AMapSearch
-  - ESPullToRefresh
   - Kingfisher (~> 3.0)
   - ObjectMapper (~> 2.2)
   - PKHUD (~> 4.0)
@@ -44,7 +42,6 @@ SPEC CHECKSUMS:
   AMapLocation: 47b62b5381a66e4d0c2931b70ffde72682427896
   AMapNavi: 9127e7cc171499830bc5613bc568984ad0b0ed04
   AMapSearch: 4979b98adf56ed4dabe735435ed78d759ba0c21f
-  ESPullToRefresh: 85f4990acf87f78c6a1466bbbee7a75d7de24db9
   Kingfisher: 7297492bf8cec9b2e2dee3519f2219948580d98e
   ObjectMapper: 65abcfd9a61cf7396cbd14a4fb22fddfcc46577e
   PKHUD: c7692163a09875cbf15827dc581df3c5cf7f1015
@@ -55,6 +52,6 @@ SPEC CHECKSUMS:
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
   SwiftyUserDefaults: 0f1d45fc3aafb9064dac661e367f8f83fe21a4b4
 
-PODFILE CHECKSUM: 44c2f6f61a486203635a85fab7b625c0fbcbc12c
+PODFILE CHECKSUM: 6c90b0c6880e606764f7043c764192ddb68c3cb9
 
 COCOAPODS: 1.2.0

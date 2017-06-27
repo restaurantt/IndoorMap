@@ -16,6 +16,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        AMapServices.shared().apiKey = AMapKey
+        
+        let vc = HomeViewController()
+        
+        let navi = BaseNavigationController(rootViewController: vc)
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = navi;
+        self.window?.makeKeyAndVisible()
+        
+        
+        
         return true
     }
 

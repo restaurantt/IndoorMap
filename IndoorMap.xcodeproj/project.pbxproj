@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C7CB5F79C92356CCA2D11B9E /* Pods_IndoorMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C26C4FF338B0450180AE4DE /* Pods_IndoorMap.framework */; };
 		DBB760AC1F01EE08005EB98C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB760AB1F01EE08005EB98C /* AppDelegate.swift */; };
-		DBB760AE1F01EE08005EB98C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB760AD1F01EE08005EB98C /* ViewController.swift */; };
 		DBB760B11F01EE08005EB98C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB760AF1F01EE08005EB98C /* Main.storyboard */; };
 		DBB760B31F01EE08005EB98C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBB760B21F01EE08005EB98C /* Assets.xcassets */; };
 		DBB760B61F01EE08005EB98C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB760B41F01EE08005EB98C /* LaunchScreen.storyboard */; };
@@ -21,6 +20,7 @@
 		DBB760E31F01F598005EB98C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB760DE1F01F598005EB98C /* BaseViewController.swift */; };
 		DBB760E41F01F598005EB98C /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB760DF1F01F598005EB98C /* BaseViewModel.swift */; };
 		DBB760E51F01F598005EB98C /* BaseWKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB760E01F01F598005EB98C /* BaseWKWebViewController.swift */; };
+		DBB761161F01F7D8005EB98C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB761151F01F7D8005EB98C /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +46,6 @@
 		DB1E063D6DCB1C3A0AA15C80 /* Pods-IndoorMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IndoorMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IndoorMap/Pods-IndoorMap.debug.xcconfig"; sourceTree = "<group>"; };
 		DBB760A81F01EE08005EB98C /* IndoorMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IndoorMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBB760AB1F01EE08005EB98C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DBB760AD1F01EE08005EB98C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DBB760B01F01EE08005EB98C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBB760B21F01EE08005EB98C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBB760B51F01EE08005EB98C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,6 +62,8 @@
 		DBB760DE1F01F598005EB98C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		DBB760DF1F01F598005EB98C /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		DBB760E01F01F598005EB98C /* BaseWKWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWKWebViewController.swift; sourceTree = "<group>"; };
+		DBB761151F01F7D8005EB98C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DBB761171F01FDD4005EB98C /* Swift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,9 +135,9 @@
 			isa = PBXGroup;
 			children = (
 				DBB760AB1F01EE08005EB98C /* AppDelegate.swift */,
-				DBB760AD1F01EE08005EB98C /* ViewController.swift */,
 				DBB760D91F01F590005EB98C /* Const.swift */,
 				DBB760AF1F01EE08005EB98C /* Main.storyboard */,
+				DBB761171F01FDD4005EB98C /* Swift-Bridging-Header.h */,
 				DBB760DB1F01F598005EB98C /* Base */,
 				DBB760E61F01F5A7005EB98C /* Medule */,
 				DBB760B21F01EE08005EB98C /* Assets.xcassets */,
@@ -179,8 +180,49 @@
 		DBB760E61F01F5A7005EB98C /* Medule */ = {
 			isa = PBXGroup;
 			children = (
+				DBB761101F01F7C6005EB98C /* Home */,
 			);
 			path = Medule;
+			sourceTree = "<group>";
+		};
+		DBB761101F01F7C6005EB98C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DBB761111F01F7C6005EB98C /* Model */,
+				DBB761121F01F7C6005EB98C /* View */,
+				DBB761131F01F7C6005EB98C /* ViewController */,
+				DBB761141F01F7C6005EB98C /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DBB761111F01F7C6005EB98C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DBB761121F01F7C6005EB98C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DBB761131F01F7C6005EB98C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DBB761151F01F7D8005EB98C /* HomeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DBB761141F01F7C6005EB98C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,11 +410,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBB760AE1F01EE08005EB98C /* ViewController.swift in Sources */,
 				DBB760AC1F01EE08005EB98C /* AppDelegate.swift in Sources */,
 				DBB760E51F01F598005EB98C /* BaseWKWebViewController.swift in Sources */,
 				DBB760E11F01F598005EB98C /* BaseModel.swift in Sources */,
 				DBB760E41F01F598005EB98C /* BaseViewModel.swift in Sources */,
+				DBB761161F01F7D8005EB98C /* HomeViewController.swift in Sources */,
 				DBB760E21F01F598005EB98C /* BaseNavigationController.swift in Sources */,
 				DBB760DA1F01F590005EB98C /* Const.swift in Sources */,
 				DBB760E31F01F598005EB98C /* BaseViewController.swift in Sources */,
@@ -530,8 +572,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = IndoorMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = gjj.IndoorMap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gjj.IndoorMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/IndoorMap/Swift-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -543,8 +586,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = IndoorMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = gjj.IndoorMap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gjj.IndoorMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/IndoorMap/Swift-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
