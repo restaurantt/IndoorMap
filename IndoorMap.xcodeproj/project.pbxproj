@@ -23,6 +23,8 @@
 		DBB761161F01F7D8005EB98C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB761151F01F7D8005EB98C /* HomeViewController.swift */; };
 		DBB761191F0235CA005EB98C /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB761181F0235CA005EB98C /* SearchBarView.swift */; };
 		DBB761201F0240A2005EB98C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB7611F1F0240A2005EB98C /* SearchViewController.swift */; };
+		DBB761221F037C4B005EB98C /* AddressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB761211F037C4B005EB98C /* AddressCell.swift */; };
+		DBB761241F0383FC005EB98C /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB761231F0383FC005EB98C /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		DBB761171F01FDD4005EB98C /* Swift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		DBB761181F0235CA005EB98C /* SearchBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		DBB7611F1F0240A2005EB98C /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		DBB761211F037C4B005EB98C /* AddressCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressCell.swift; sourceTree = "<group>"; };
+		DBB761231F0383FC005EB98C /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +181,7 @@
 				DBB760DE1F01F598005EB98C /* BaseViewController.swift */,
 				DBB760DF1F01F598005EB98C /* BaseViewModel.swift */,
 				DBB760E01F01F598005EB98C /* BaseWKWebViewController.swift */,
+				DBB761231F0383FC005EB98C /* LocationManager.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -252,6 +257,7 @@
 		DBB7611C1F024082005EB98C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DBB761211F037C4B005EB98C /* AddressCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -456,6 +462,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBB761221F037C4B005EB98C /* AddressCell.swift in Sources */,
 				DBB761201F0240A2005EB98C /* SearchViewController.swift in Sources */,
 				DBB760AC1F01EE08005EB98C /* AppDelegate.swift in Sources */,
 				DBB761191F0235CA005EB98C /* SearchBarView.swift in Sources */,
@@ -463,6 +470,7 @@
 				DBB760E11F01F598005EB98C /* BaseModel.swift in Sources */,
 				DBB760E41F01F598005EB98C /* BaseViewModel.swift in Sources */,
 				DBB761161F01F7D8005EB98C /* HomeViewController.swift in Sources */,
+				DBB761241F0383FC005EB98C /* LocationManager.swift in Sources */,
 				DBB760E21F01F598005EB98C /* BaseNavigationController.swift in Sources */,
 				DBB760DA1F01F590005EB98C /* Const.swift in Sources */,
 				DBB760E31F01F598005EB98C /* BaseViewController.swift in Sources */,

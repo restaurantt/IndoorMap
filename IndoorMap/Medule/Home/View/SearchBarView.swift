@@ -38,7 +38,6 @@ class SearchBarView: UIView, UITextFieldDelegate {
         self.layer.masksToBounds = true
         self.backgroundColor = UIColor.white
         
-        
         textField.placeholder = "搜索"
         textField.font = UIFont.systemFont(ofSize: 15)
         textField.borderStyle = .none

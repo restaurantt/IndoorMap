@@ -11,11 +11,14 @@ import SnapKit
 import RxSwift
 import RxCocoa
 import CoreLocation
+import SCLAlertView
 
 class HomeViewController: BaseViewController, MAMapViewDelegate {
 
     var mapView: MAMapView!
     var searchBarView = SearchBarView()
+    
+    var selectedPOI: AMapPOI?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,6 +62,11 @@ class HomeViewController: BaseViewController, MAMapViewDelegate {
         weak var weakSelf = self
         searchBarView.gotoSearchBlock = {
             let vc = SearchViewController()
+            vc.selectPOIBlock = {
+                poi in
+                weakSelf?.selectedPOI = poi
+                weakSelf?.adjustMapWithPOI()
+            }
             weakSelf?.navigationController?.pushViewController(vc, animated: true)
         }
         self.view.addSubview(searchBarView)
@@ -90,6 +98,26 @@ class HomeViewController: BaseViewController, MAMapViewDelegate {
             self.present(alert, animated: true, completion: { 
                 
             })
+        }
+    }
+    
+    //通过选中的poi调整地图
+    func adjustMapWithPOI() {
+        if (selectedPOI?.hasIndoorMap)! {
+            let coordinate = CLLocationCoordinate2DMake(Double((selectedPOI?.location.latitude)!), Double((selectedPOI?.location.longitude)!))
+            self.searchBarView.textField.text = selectedPOI?.name
+            self.mapView.setCenter(coordinate, animated: true)
+            self.mapView.setZoomLevel(18, animated: true)
+        } else {
+            SCLAlertView().showTitle(
+                "提示", // Title of view
+                subTitle: "选择的地方没有室内地图", // String of view
+                duration: 2.0, // Duration to show before closing automatically, default: 0.0
+                completeText: "确定", // Optional button value, default: ""
+                style: .error, // Styles - see below.
+                colorStyle: 0xA429FF,
+                colorTextButton: 0xFFFFFF
+            )
         }
     }
     

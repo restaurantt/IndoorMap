@@ -9,6 +9,7 @@
 import UIKit
 
 let AMapKey = "08f479b11e8d7851802dfcbd6a6a97e1"
+
 let ScreenWidth = UIScreen.main.bounds.size.width
 let ScreenHeight = UIScreen.main.bounds.size.height
 

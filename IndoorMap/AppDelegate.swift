@@ -19,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         AMapServices.shared().apiKey = AMapKey
         
+
+        
         let vc = HomeViewController()
         
         let navi = BaseNavigationController(rootViewController: vc)
